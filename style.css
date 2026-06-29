@@ -101,11 +101,21 @@
             border-bottom: 1px solid var(--rose-light);
         }
 
-        /* Desktop: nav-links tampil normal */
+        /* Default: nav-links hidden (mobile-first) */
         .nav-links {
-            display: flex;
+            display: none;
             align-items: center;
             gap: 2.5rem;
+        }
+
+        /* Desktop: tampil normal */
+        @media (min-width: 769px) {
+            .nav-links {
+                display: flex !important;
+            }
+            .nav-hamburger {
+                display: none !important;
+            }
         }
 
         nav a {
@@ -966,6 +976,7 @@
                 align-items: center;
             }
 
+            /* Mobile: nav-links tersembunyi, muncul saat .open */
             .nav-links {
                 display: none;
                 width: 100%;
@@ -978,7 +989,7 @@
             }
 
             .nav-links.open {
-                display: flex;
+                display: flex !important;
             }
 
             nav a {
