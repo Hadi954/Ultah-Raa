@@ -169,3 +169,21 @@
             }
         }
 
+        // Hamburger Menu Toggle (Mobile)
+        const hamburgerBtn = document.getElementById('nav-hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        if (hamburgerBtn && navLinks) {
+            hamburgerBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                hamburgerBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+            });
+
+            // Tutup menu saat link diklik
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    hamburgerBtn.textContent = '☰';
+                });
+            });
+        }

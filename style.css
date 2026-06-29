@@ -101,6 +101,13 @@
             border-bottom: 1px solid var(--rose-light);
         }
 
+        /* Desktop: nav-links tampil normal */
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
         nav a {
             font-family: 'DM Sans', sans-serif;
             font-size: 13px;
@@ -924,4 +931,235 @@
         @keyframes popConfetti {
             0% { opacity: 1; transform: translate(0, 0) scale(1) rotate(0deg); }
             100% { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(0.5) rotate(var(--rot)); }
+        }
+
+        /* ========================================
+           MOBILE RESPONSIVE — HP SUPPORT
+           ======================================== */
+
+        /* Hamburger menu button */
+        .nav-hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--muted);
+            font-size: 1.5rem;
+            padding: 0.25rem;
+            transition: color 0.3s;
+        }
+        .nav-hamburger:hover { color: var(--rose); }
+
+        @media (max-width: 768px) {
+
+            /* --- NAV --- */
+            nav {
+                padding: 0.85rem 1.25rem;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0;
+            }
+
+            .nav-hamburger {
+                display: flex;
+                align-items: center;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0.75rem 0 0.5rem;
+                border-top: 1px solid var(--rose-light);
+                margin-top: 0.5rem;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .theme-btn {
+                font-size: 1rem;
+            }
+
+            /* --- HERO --- */
+            .hero {
+                padding: 7rem 1.25rem 3rem;
+            }
+
+            .hero-title {
+                font-size: clamp(2.8rem, 12vw, 4.5rem);
+            }
+
+            .hero-desc {
+                font-size: 0.95rem;
+                max-width: 100%;
+            }
+
+            /* --- REASONS SECTION --- */
+            #reasons {
+                padding: 4rem 1.25rem;
+            }
+
+            .reasons-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            /* --- TIMELINE SECTION --- */
+            #timeline {
+                padding: 4rem 1.25rem;
+            }
+
+            .timeline-wrapper {
+                max-width: 100%;
+            }
+
+            .timeline-line {
+                left: 16px;
+            }
+
+            .timeline-item {
+                justify-content: flex-start !important;
+                padding-right: 0 !important;
+                padding-left: 3rem !important;
+                margin-bottom: 2rem;
+            }
+
+            .timeline-item:nth-child(even) {
+                padding-left: 3rem !important;
+            }
+
+            .timeline-dot {
+                left: 16px;
+            }
+
+            .timeline-content {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            /* --- LETTER SECTION --- */
+            #letter {
+                padding: 4rem 1rem;
+            }
+
+            .letter-inner {
+                padding: 2rem 1.25rem;
+                border-radius: 16px;
+            }
+
+            .letter-inner::before {
+                font-size: 3.5rem;
+                left: 1rem;
+            }
+
+            .letter-to {
+                font-size: 1.3rem;
+            }
+
+            .letter-body {
+                font-size: 0.92rem;
+            }
+
+            /* --- ALBUM SECTION --- */
+            #album {
+                padding: 4rem 1.25rem;
+            }
+
+            .album-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+                padding: 0.5rem;
+            }
+
+            .album-item:nth-child(even),
+            .album-item:nth-child(odd) {
+                transform: rotate(0deg);
+            }
+            .album-item:hover {
+                transform: scale(1.03) rotate(0deg) !important;
+            }
+
+            .photo-frame img {
+                height: 180px;
+            }
+
+            /* --- CAKE SECTION --- */
+            #cake-section {
+                padding: 3rem 1.25rem;
+            }
+
+            .cake-container {
+                width: 160px;
+                height: 160px;
+            }
+
+            /* --- FLOATING BUTTONS --- */
+            .music-player-container {
+                bottom: 1.25rem;
+                left: 1.25rem;
+            }
+
+            .edit-btn {
+                bottom: 1.25rem;
+                right: 1.25rem;
+                padding: 0.65rem 1.1rem;
+                font-size: 12px;
+            }
+
+            .music-btn {
+                width: 44px;
+                height: 44px;
+                font-size: 1rem;
+            }
+
+            .music-menu {
+                width: 180px;
+            }
+
+            /* --- MODAL --- */
+            .modal {
+                padding: 1.5rem 1.25rem;
+                border-radius: 16px;
+                max-height: 85vh;
+            }
+
+            .modal-overlay {
+                padding: 1rem;
+                align-items: flex-end;
+            }
+
+            /* --- FOOTER --- */
+            footer {
+                padding: 2rem 1.25rem;
+                font-size: 0.78rem;
+            }
+
+            /* --- SECTION TITLES --- */
+            .section-title {
+                font-size: clamp(1.6rem, 6vw, 2.2rem);
+            }
+        }
+
+        /* Extra small phones (< 400px) */
+        @media (max-width: 400px) {
+            .album-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: clamp(2.4rem, 10vw, 3.5rem);
+            }
+
+            .timeline-content {
+                padding: 1rem;
+            }
         }
