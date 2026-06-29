@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Zahra 🌸</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="petals" id="petals"></div>
+
+    <nav>
+        <a href="#reasons">Alasan</a>
+        <a href="#timeline">Cerita Kita</a>
+        <a href="#album">Galeri</a>
+        <a href="#letter">Surat Cinta</a>
+        <button id="theme-toggle" class="theme-btn" title="Ganti Tema">🌙</button>
+    </nav>
+
+    <section class="hero">
+        <p class="hero-subtitle">sebuah halaman untuk</p>
+        <h1 class="hero-title" id="hero-name">Zahra Yaquta </h1>
+        <p class="hero-desc" id="hero-desc">ternyata rumah bisa hadir dalam bentuk seseorang, dan mas nemuin itu di
+            dedee.</p>
+
+        <div id="cake-section"
+            style="padding: 1rem 0 2rem; background: transparent; transform: scale(0.85); margin-top: -1rem; display: flex; flex-direction: column; align-items: center;">
+            <div class="cake-header" style="text-align: center;">
+                <span class="section-label" style="margin-bottom: 0.25rem;">Make a wish</span>
+                <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 0.25rem;">Tiup Lilinnya!</h2>
+                <p style="text-align:center; color: var(--muted); margin-bottom: 2rem; font-size: 0.9rem;">Klik kuenya
+                    untuk tiup lilin 🎂</p>
+                <button id="reopen-letter-btn"
+                    style="display: none; background: var(--rose); color: white; border: none; padding: 0.5rem 1.25rem; border-radius: 20px; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: transform 0.2s; box-shadow: 0 4px 15px rgba(232,137,154,0.3); margin-bottom: 1rem; align-items: center; gap: 8px;">💌
+                    Baca Surat Lagi</button>
+            </div>
+            <div class="cake-container" id="cake-container">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="sponge"></div>
+                    <div class="icing"></div>
+                    <div class="candle">
+                        <div class="flame" id="flame"></div>
+                    </div>
+                </div>
+                <div class="confetti-container" id="confetti-container"></div>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <section id="reasons">
+        <div class="reasons-header">
+
+            <h2 class="section-title">Alasan Mas Suka Dede</h2>
+        </div>
+        <div class="reasons-grid" id="reasons-grid">
+            <div class="reason-card">
+                <span class="number">01</span><span class="emoji">🫂</span>
+                <h3>Cara dede peduli sama mas</h3>
+                <p>Mas suka cara dede peduli, bahkan di hal-hal kecil yang mungkin orang lain nganggep biasa aja. Cara
+                    dede selalu ngingetin mas makan, nyuruh mas istirahat, marah kalau mas tidur terlalu malam — itu
+                    semua bikin mas ngerasa ada yang bener-bener mikirin mas. Dan jujur, mas nyaman banget diperlakukan
+                    kayak gitu sama dede.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">02</span><span class="emoji">💬</span>
+                <h3>Cara dede cerita apa aja ke mas</h3>
+                <p>Mas suka waktu dede cerita panjang lebar tentang hari dede, tugas kampus, orang-orang di sekitar
+                    dede, atau bahkan hal random yang sebenernya ga penting. Karena dari situ mas ngerasa dede nganggep
+                    mas tempat cerita dede. Mas suka jadi orang yang dede cari buat nyeritain semuanya.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">03</span><span class="emoji">🥰</span>
+                <h3>Cara dede sayang sama mas</h3>
+                <p>Walaupun kadang dede gengsi, gampang overthinking, atau sering mikir terlalu jauh, mas tau semua itu
+                    muncul karena dede sayang sama mas. Mas bisa ngerasain gimana besar rasa dede dari hal-hal kecil
+                    yang dede lakuin. Dan jujur, dicintai sama dede tuh rasanya hangat banget.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">04</span><span class="emoji">🥺</span>
+                <h3>Cara dede selalu bikin mas kangen</h3>
+                <p>Aneh ya, padahal kita hampir tiap hari chat atau call, tapi mas tetep gampang kangen sama dede.
+                    Kadang baru beberapa jam ga ngobrol aja rasanya ada yang kurang. Sesimpel itu pengaruh dede di
+                    hari-hari mas sekarang.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">05</span><span class="emoji">🏡</span>
+                <h3>Cara dede bikin mas nyaman jadi diri sendiri</h3>
+                <p>Kalau sama dede mas ngerasa bisa jadi diri mas sendiri tanpa takut dihakimi. Mau mas lagi ngeselin,
+                    capek, ngeluh, random, atau lagi banyak pikiran, dede tetep dengerin mas. Dan itu hal yang ga semua
+                    orang bisa kasih.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">06</span><span class="emoji">🌸</span>
+                <h3>Cara dede hadir di hidup mas</h3>
+                <p>Mas ga tau sejak kapan, tapi sekarang hampir semua hal kecil bikin mas inget dede. Lagu, makanan,
+                    film, bahkan hal random di jalan kadang bikin mas mikir “ih ini dedee banget.” Dede bener-bener udah
+                    jadi bagian dari keseharian mas.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">07</span><span class="emoji">🤝</span>
+                <h3>Cara kita selalu balik lagi</h3>
+                <p>Mas suka gimana seberat apapun masalah kita, sejauh apapun kita sempet diem-dieman, ujung-ujungnya
+                    kita tetep nyari satu sama lain lagi. Kita mungkin banyak kurangnya, tapi mas suka karena kita masih
+                    sama-sama mau bertahan dan belajar.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">08</span><span class="emoji">🌟</span>
+                <h3>Karena dede itu dede</h3>
+                <p>Mas suka dede bukan karena dede sempurna. Mas suka dede karena dede ya dede. Dengan semua sifat dede,
+                    cara dede ngomong, cara dede marah, cara dede cemburu, cara dede sayang, semuanya bikin mas nyaman
+                    dan susah buat ga jatuh cinta sama dede terus.</p>
+            </div>
+            <div class="reason-card">
+                <span class="number">09</span><span class="emoji">🎬</span>
+                <h3>Momen kecil sama dede</h3>
+                <p>Mas suka ketika dede mau diajak nobar walaupun kadang ujung-ujungnya kita malah sibuk ngobrol
+                    daripada fokus sama filmnya. Mas suka pas vc sama dede, apalagi kalau kita ngomong random sampe
+                    larut malam atau cuma diem-dieman tapi tetep nyaman. Mas juga suka saat dede tiba-tiba manja,
+                    manggil mas dengan cara khas dede, atau pas dede cemburu kecil yang lucu itu.</p>
+                <p style="margin-top: 10px;">Dan jujur, hal-hal kecil kaya gitu yang bikin mas makin sayang sama dede.
+                    Karena mungkin buat orang lain biasa aja, tapi buat mas itu jadi bagian dari kebahagiaan kecil yang
+                    selalu mas tunggu tiap hari.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <div class="timeline-header">
+            <span class="section-label">perjalanan kita</span>
+            <h2 class="section-title">Timeline Cerita Kita</h2>
+        </div>
+        <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+            <div id="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Awal Mula</div>
+                        <div class="timeline-title">Ketemu di Litmatch 📱</div>
+                        <div class="timeline-desc">awalnya cuma dua orang asing yang ketemu dari litmatch, random
+                            banget, bahkan mungkin dulu ga kepikiran bakal sejauh ini. dari chat kecil yang awalnya cuma
+                            iseng, lama-lama jadi kebiasaan. yang tadinya cuma nunggu notif biasa, berubah jadi nungguin
+                            satu orang setiap hari.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Masa PDKT</div>
+                        <div class="timeline-title">Ngerasa Nyaman ✨</div>
+                        <div class="timeline-desc">terus masuk ke masa pdkt yang isinya seru banget. ngobrol sampe pagi,
+                            call lama, cerita hal random, saling nyari terus tiap hari. dari situ mas mulai ngerasa
+                            “kayanya mas nyaman banget sama orang ini.”</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Makin Dekat</div>
+                        <div class="timeline-title">Jadi Tempat Pulang 🏡</div>
+                        <div class="timeline-desc">habis itu kita mulai makin deket. mulai ada cemburu, mulai ada takut
+                            kehilangan, mulai ada rasa pengen diprioritasin satu sama lain. kita juga mulai sama-sama
+                            buka diri, cerita masalah masing-masing, cerita masa lalu, dan pelan-pelan jadi tempat
+                            pulang satu sama lain.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mulai Ada Ujian</div>
+                        <div class="timeline-title">Lika-liku Hubungan 🌧️</div>
+                        <div class="timeline-desc">tapi makin sayang ternyata makin banyak juga lika-likunya. mulai ada
+                            salah paham, ego, overthinking, rasa kecewa, rasa takut kehilangan, rasa capek, sampai
+                            akhirnya sama-sama berubah dikit demi jaga diri masing-masing. ada momen kita sama-sama
+                            ngerasa “kok jadi beda ya dari dulu.”</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Titik Terendah</div>
+                        <div class="timeline-title">Sempat Merasa Jauh 🥀</div>
+                        <div class="timeline-desc">kita pernah ada di titik yang bener-bener bikin sedih. diem-dieman,
+                            ngerasa ga dimengerti, sama-sama nunggu siapa yang nyari duluan. ada juga momen dimana kita
+                            sama-sama takut hubungan ini ga bakal sehangat dulu lagi.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Bangkit Bersama</div>
+                        <div class="timeline-title">Selalu Balik Lagi 🤝</div>
+                        <div class="timeline-desc">tapi di tengah semua itu, kita selalu balik lagi. selalu masih milih
+                            satu sama lain. selalu masih nyari satu sama lain pas lagi capek, sedih, atau lagi ga
+                            baik-baik aja.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Merenung</div>
+                        <div class="timeline-title">Kok Bisa Sepenting Ini? 💭</div>
+                        <div class="timeline-desc">dan jujur, kalau dipikir-pikir lucu juga. dari aplikasi random kaya
+                            litmatch, ternyata mas bisa nemu seseorang yang sekarang jadi sepenting ini buat mas.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Bertahan</div>
+                        <div class="timeline-title">Sama-sama Berusaha ❤️</div>
+                        <div class="timeline-desc">mungkin hubungan kita ga sempurna, banyak banget kurangnya, banyak
+                            salahnya juga. tapi mas suka gimana kita masih sama-sama mau bertahan, sama-sama mau
+                            belajar, dan sama-sama mau berusaha buat hubungan ini.</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Harapan</div>
+                        <div class="timeline-title">Bersyukur Ada Dede 🌸</div>
+                        <div class="timeline-desc">mas ga tau kedepannya bakal gimana, tapi sejauh ini mas seneng karena
+                            semua lika-liku itu mas lewatin sama dede.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="album">
+        <div class="album-header">
+            <span class="section-label">koleksi foto</span>
+            <h2 class="section-title">Foto-foto Favorit Mas</h2>
+            <p style="text-align:center; color: var(--muted); margin-bottom: 3rem; font-size: 0.95rem;">kumpulan foto
+                dede yang paling mas suka 🌸</p>
+        </div>
+        <div class="album-grid">
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_1.jpg" alt="Foto Zahra 1"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+1'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="zahra_2.jpg" alt="Foto Zahra 2"
+                        onerror="this.src='https://via.placeholder.com/300x300/fde8ee/c4748a?text=Foto+2'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="zahra_3.jpg" alt="Foto Zahra 3"
+                        onerror="this.src='https://via.placeholder.com/400x300/fde8ee/c4748a?text=Foto+3'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="zahra_4.jpg" alt="Foto Zahra 4"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+4'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="zahra_7.jpg" alt="Foto Zahra 7"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+7'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_8.jpeg" alt="Foto Zahra 8"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+8'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_9.jpeg" alt="Foto Zahra 9"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+9'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_10.jpeg" alt="Foto Zahra 10"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+10'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_11.jpg" alt="Foto Zahra 11"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+11'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_12.jpeg" alt="Foto Zahra 12"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+12'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_13.jpg" alt="Foto Zahra 13"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+13'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_14.jpg" alt="Foto Zahra 14"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+14'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_15.jpg" alt="Foto Zahra 15"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+15'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_16.jpg" alt="Foto Zahra 16"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+16'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_17.jpg" alt="Foto Zahra 17"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+17'">
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <img src="Zahra_18.jpg" alt="Foto Zahra 18"
+                        onerror="this.src='https://via.placeholder.com/300x400/fde8ee/c4748a?text=Foto+18'">
+                </div>
+            </div>
+        </div>
+
+        <div class="album-header" style="margin-top: 4rem;">
+            <span class="section-label">koleksi video</span>
+            <h2 class="section-title">Video Random Si Imut</h2>
+            <p style="text-align:center; color: var(--muted); margin-bottom: 3rem; font-size: 0.95rem;">kumpulan video
+                dede yang ada di galeri mas 🎥</p>
+        </div>
+        <div class="album-grid">
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 1.mp4" controls preload="metadata"></video>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 2.mp4" controls preload="metadata"></video>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 3.mp4" controls preload="metadata"></video>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 5.mp4" controls preload="metadata"
+                        style="aspect-ratio: 16/9; object-fit: cover; width: 100%; height: auto;"></video>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 4.mp4" controls preload="metadata"
+                        style="aspect-ratio: 16/9; object-fit: cover; width: 100%; height: auto;"></video>
+                </div>
+            </div>
+        </div>
+
+        <div class="album-grid" style="margin-top: 2rem;">
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 6.mp4" controls preload="metadata"
+                        style="aspect-ratio: 9/16; object-fit: cover; width: 100%; height: auto;"></video>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 7.mp4" controls preload="metadata"
+                        style="aspect-ratio: 9/16; object-fit: cover; width: 100%; height: auto;"></video>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="photo-frame">
+                    <video src="video zahra 8.mp4" controls preload="metadata"
+                        style="aspect-ratio: 9/16; object-fit: cover; width: 100%; height: auto;"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="letter">
+        <div class="letter-inner">
+            <div class="letter-header">
+                <div class="letter-to" id="letter-to">Untuk Zahra,</div>
+            </div>
+            <div class="letter-body" id="letter-body">
+                <p>Mas ga pernah nyangka kalau dari aplikasi random kaya litmatch, mas bisa ketemu seseorang yang
+                    akhirnya jadi rumah buat mas sendiri.</p>
+                <p>Awalnya kita cuma dua orang asing yang ngobrol biasa, saling nanya hal random, saling nunggu balasan
+                    chat, sampai akhirnya tanpa sadar mas jadi terbiasa sama dede. Terbiasa nyari dede, nungguin dede,
+                    dan pengen cerita apa aja ke dede.</p>
+                <p>Mas suka semua hal tentang kita, bahkan hal-hal kecil yang mungkin ga penting buat orang lain. Cara
+                    dede cerita panjang lebar, cara dede ngambek, cara dede cemburu, cara dede selalu pengen dimengerti
+                    tapi diam-diam juga berusaha ngerti mas.</p>
+                <p>Kita emang banyak banget kurangnya. Kita pernah sama-sama capek, salah paham, diem-dieman, sampai
+                    bikin satu sama lain sedih. Tapi dari semua itu, yang paling mas suka adalah kita selalu balik lagi.
+                    Selalu masih milih satu sama lain.</p>
+                <p>Mas tau mas belum jadi pacar yang sempurna buat dede. Kadang mas kurang peka, kurang nunjukin effort,
+                    dan bikin dede ngerasa sendiri. Tapi satu hal yang ga pernah berubah dari dulu sampai sekarang: mas
+                    masih sayang banget sama dede.</p>
+                <p>Dan jujur, mas masih pengen banyak hal sama dede. Masih pengen call random sampe ketiduran, masih
+                    pengen nonton bareng lagi, masih pengen denger cerita dede tiap hari, masih pengen jadi orang
+                    pertama yang dede cari pas lagi seneng ataupun sedih.</p>
+                <p>Kalau nanti hubungan kita ada cape-capenya lagi, mas harap kita jangan nyerah yaa. Karena menurut
+                    mas, hubungan ini terlalu indah buat dilepas cuma karena kita lagi sama-sama lelah.</p>
+                <p>Terima kasih yaa udah hadir di hidup mas sejauh ini. Terima kasih karena masih bertahan, masih mau
+                    belajar, dan masih mau milih mas sampai sekarang.</p>
+                <p>Mass sayang Dedee.</p>
+            </div>
+            <div class="letter-sign">
+                <p>dengan sepenuh hati,</p>
+                <div class="sig" id="letter-sig">— Hadi</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="spotify-playlist" style="padding: 6rem 2rem; background: var(--cream); text-align: center;">
+        <div class="playlist-header">
+            <span class="section-label">For you 🎧</span>
+            <h2 class="section-title">I Love Youu</h2>
+            <p style="color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem;">Karena kadang kata-kata aja nggak cukup, biar lagu-lagu ini yang wakilin perasaan mass ke dedee 🤍</p>
+        </div>
+        <a href="https://open.spotify.com/playlist/3BULJdVRIY464YevcXupVj?si=OiWupEitRHKjNfq3WSzKIA&pi=OVKfuWYnSXKyn"
+            target="_blank" rel="noopener noreferrer"
+            style="display: inline-flex; align-items: center; gap: 10px; background: #1DB954; color: white; text-decoration: none; padding: 0.85rem 2rem; border-radius: 50px; font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 8px 24px rgba(29, 185, 84, 0.3);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.54.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.84.241 1.2zM19.081 9.3c-3.96-2.34-10.44-2.58-14.16-1.44-.6.18-1.2-.12-1.38-.72-.18-.6.12-1.2.72-1.38 4.32-1.26 11.4-1.02 15.841 1.62.54.3 0.72 1.02.42 1.56-.3.54-1.02.72-1.441.36z" />
+            </svg>
+            Buka di Spotify
+        </a>
+    </section>
+
+    <footer>
+        <p>20 tahun yang lalu ada orang baik yang lahir ke dunia, dan sekarang orang itu jadi bagian paling penting di
+            hidupku. Happy 20th birthday yaa 🌸</p>
+    </footer>
+
+    <!-- Modal Surat Ulang Tahun -->
+    <div class="modal-overlay" id="birthday-letter-modal">
+        <div class="modal" style="max-width: 600px;">
+            <div style="text-align: right;">
+                <button id="close-letter"
+                    style="background:none; border:none; font-size: 1.8rem; cursor:pointer; color: var(--muted); line-height: 1;">&times;</button>
+            </div>
+            <h2
+                style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--deep); text-align: center; margin-top: -1rem; margin-bottom: 1.5rem;">
+                Happy 20th Birthday!</h2>
+            <div
+                style="font-size: 0.95rem; line-height: 1.7; color: var(--text); font-weight: 300; text-align: justify; padding: 0 1rem;">
+                <p style="margin-bottom: 1rem;">Happy Birthday yang ke-20 yaa, sayangkuu cintakuuuu 🤍🥳🎂</p>
+                <p style="margin-bottom: 1rem;">Ga kerasa yaa sekarang dedee udah kepala dua. Semoga di umur yang baru
+                    ini semua doa dan harapan dedee satu-satu bisa tercapai. Semoga kuliahnya selalu dilancarin, selalu
+                    dikasih kesehatan, dijauhkan dari hal-hal yang bikin sedih, dipermudah setiap langkahnya, dan semoga
+                    dedee selalu dikelilingi orang-orang baik yang sayang sama dedee.</p>
+                <p style="margin-bottom: 1rem;">Terima kasih yaa udah lahir ke dunia ini. Terima kasih juga karena dari
+                    sekian banyak orang, dedee milih buat hadir di hidup mass. Terima kasih udah nemenin mass sejauh
+                    ini, udah sabar ngadepin sifat mass, udah mau berjuang sama mass, dan udah selalu berusaha jadi
+                    pasangan yang terbaik. Mass bersyukur banget bisa kenal sama dedee dan punya kesempatan buat jadi
+                    orang yang nemenin dedee sampai sekarang.</p>
+                <p style="margin-bottom: 1rem;">Maaf yaa kalau selama ini mass masih banyak kurangnya, masih sering
+                    bikin dedee kesel, sedih, atau kepikiran. Tapi satu hal yang pengen mass bilang, mass ga pernah
+                    nyesel kenal sama dedee. Justru setiap hari mass makin bersyukur karena punya dedee.</p>
+                <p style="margin-bottom: 1rem;">Semoga di umur 20 ini dedee makin bahagia, makin kuat, makin percaya
+                    sama diri sendiri, dan semua hal baik selalu dateng ke hidup dedee. Jangan terlalu keras sama diri
+                    sendiri yaa, kalau lagi capek istirahat, kalau lagi sedih cerita ke mass. Mass bakal selalu berusaha
+                    ada buat dedee, nemenin dedee, dengerin semua cerita dedee, dan jalan bareng sama dedee selama dedee
+                    masih mau sama mass.</p>
+                <p style="margin-bottom: 1rem;">Sekali lagi, happy birthday yaa sayangkuu. Terima kasih udah jadi rumah,
+                    tempat pulang, dan alasan mass buat terus belajar jadi orang yang lebih baik. Semoga ini bukan cuma
+                    ulang tahun yang ke-20, tapi jadi awal dari banyak ulang tahun berikutnya yang bisa mass rayain
+                    bareng dedee.</p>
+                <p style="margin-bottom: 2rem;">I love you so much, more than words can explain. Selamat ulang tahun,
+                    perempuan paling berharga di hidup mass. Semoga hari ini dan seterusnya selalu penuh kebahagiaan.
+                    🤍🎂🫂</p>
+
+                <div style="text-align: right;">
+                    <div
+                        style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-style: italic; color: var(--rose);">
+                        — Mass</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player-container">
+        <button class="music-btn" id="music-toggle" onclick="toggleMusicMenu()" title="Pilih Lagu">🎵</button>
+        <div class="music-menu" id="music-menu">
+            <h4>Pilih Lagu</h4>
+            <div class="song-item active-song" onclick="playSong('Favorite%20Girl.mp3', this)">Favorite Girl</div>
+            <div class="song-item" onclick="playSong('kota_ini_tak_sama_tanpamu_.mp3', this)">Kota Ini Tak Sama Tanpamu
+            </div>
+            <div class="song-item" onclick="pauseMusic()"
+                style="text-align: center; color: var(--rose); margin-top: 5px; font-size: 0.8rem; padding: 0.25rem;">⏸️
+                Pause Musik</div>
+        </div>
+    </div>
+    <audio id="bg-music" src="Favorite%20Girl.mp3" loop preload="auto"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
